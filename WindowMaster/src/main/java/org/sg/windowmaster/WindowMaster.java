@@ -7,6 +7,9 @@ public class WindowMaster {
     public static void main(String[] args) {
 
         // Declare variables
+        String familyName;
+        String givenName;
+
         float height;
         float width;
 
@@ -21,6 +24,10 @@ public class WindowMaster {
         // Instantiate
         Scanner myScanner = new Scanner(System.in);
 
+        System.out.println("Please enter the family name:");
+        familyName = myScanner.nextLine();
+        System.out.println("Please enter the given name:");
+        givenName = myScanner.nextLine();
         System.out.println("Please enter window height:");
         stringHeight = myScanner.nextLine();
         System.out.println("Please enter window width:");
@@ -35,6 +42,8 @@ public class WindowMaster {
         cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
 
         // Give information back to user
+        System.out.println("Customer family name: " + familyName);
+        System.out.println("Customer given name: " + givenName);
         System.out.println("Window height = " + stringHeight);
         System.out.println("Window width = " + stringWidth);
         System.out.println("Window area = " + areaOfWindow);
