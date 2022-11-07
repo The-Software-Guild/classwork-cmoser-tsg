@@ -23,22 +23,18 @@ public class WindowMaster {
         float cost;
         float perimeterOfWindow;
 
+        // comment
+
         // Get input
         // Instantiate
-        //Scanner myScanner = new Scanner(System.in);
 
-        //System.out.println("Please enter the family name:");
-        //familyName = myScanner.nextLine();
         familyName = retrieveFamilyName();
         System.out.println("Please enter the given name:");
         givenName = myScanner.nextLine();
-//        System.out.println("Please enter window height:");
-//        stringHeight = myScanner.nextLine();
         System.out.println("Please enter window width:");
         stringWidth = myScanner.nextLine();
 
         // Make calculatinos
-        //height = Float.parseFloat(stringHeight);
         height = retrieveHeight();
         width = Float.parseFloat(stringWidth);
 
