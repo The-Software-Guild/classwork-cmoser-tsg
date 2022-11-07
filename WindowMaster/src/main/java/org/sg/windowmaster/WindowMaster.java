@@ -23,8 +23,6 @@ public class WindowMaster {
         float cost;
         float perimeterOfWindow;
 
-        // comment
-
         // Get input
         // Instantiate
 
