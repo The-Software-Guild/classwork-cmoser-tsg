@@ -1,5 +1,7 @@
 package org.sg.windowmaster;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class WindowMaster {
@@ -34,6 +36,19 @@ public class WindowMaster {
 
         SquareWindow squareWindow = new SquareWindow(4.7f);
         cost = squareWindow.getCost();
+
+        List<LineItemInterface> lineItems = new ArrayList<>();
+        lineItems .add(window1);
+        lineItems .add(window2);
+        lineItems .add(squareWindow);
+
+        //for (RectangularWindow window: windows) {
+        for (LineItemInterface window: lineItems ) {
+            System.out.println("Cost: " + window.getCost());
+        }
+        //List<String> test2 = new List<>();
+
+        //Window test = new Window();
 
 //        areaOfWindow = height * width;
 //        perimeterOfWindow = 2 * (height + width);

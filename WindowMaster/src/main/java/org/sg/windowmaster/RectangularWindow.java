@@ -1,47 +1,49 @@
 package org.sg.windowmaster;
 
 // Data Transfer Object
-public class RectangularWindow {
+public class RectangularWindow extends Window implements LineItemInterface {
 
-    // Properties
-    private float height;
-    private float width;
+    // Fields / Attributes
+    private float areaOfWindow;
+    private float cost;
+    private float perimeterOfWindow;
 
     public RectangularWindow(float height, float width) {
         //this.height = height;
         setHeight(height);
-        this.width = width;
+        setWidth(width);
     }
 
-    public void setHeight(float height) {
-        if (height < 0) {
-            height = 0;
-        } else {
-            this.height = height;
-        }
-    }
+//    public void setHeight(float height) {
+//        if (height < 0) {
+//            height = 0;
+//        } else {
+//            this.height = height;
+//        }
+//        calculateGeometry();
+//    }
+//
+//    public void setWidth(float width) {
+//        this.width = width;
+//        calculateGeometry();
+//    }
+//
+//    public float getHeight() {
+//        return height;
+//    }
+//
+//    public float getWidth() {
+//        return width;
+//    }
 
-    public void setWidth(float width) {
-        this.width = width;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public float getWidth() {
-        return width;
+    @Override
+    public void calculateGeometry() {
+        areaOfWindow = getHeight() * getHeight();
+        perimeterOfWindow = 2 * (getHeight() + getWidth());
+        cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
     }
 
     public float getCost() {
-        float areaOfWindow;
-        float cost;
-        float perimeterOfWindow;
-
-        areaOfWindow = height * width;
-        perimeterOfWindow = 2 * (height + width);
-        cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
-
         return cost;
     }
 }

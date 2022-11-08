@@ -7,17 +7,17 @@ public class SquareWindow extends RectangularWindow {
         setWidth(height);
     }
 
-    @Override
-    public float getCost() {
-
-        float areaOfWindow;
-        float cost;
-        float perimeterOfWindow;
-
-        areaOfWindow = getHeight() * getHeight() ;
-        perimeterOfWindow = 4 * getHeight();
-        cost = ((2.50f * areaOfWindow) + (1.25f * perimeterOfWindow));
-
-        return cost;
-    }
+//    @Override
+//    public float getCost() {
+//
+//        float areaOfWindow;
+//        float cost;
+//        float perimeterOfWindow;
+//
+//        areaOfWindow = getHeight() * getHeight() ;
+//        perimeterOfWindow = 4 * getHeight();
+//        cost = ((2.50f * areaOfWindow) + (1.25f * perimeterOfWindow));
+//
+//        return cost;
+//    }
 }
