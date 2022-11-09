@@ -1,7 +1,7 @@
-package org.sg.windowmaster;
+package org.sg.windowmaster.dto;
 
 // Data Transfer Object
-public class RectangularWindow extends Window implements LineItemInterface {
+public class RectangularWindow extends Window {
 
     // Fields / Attributes
     private float areaOfWindow;

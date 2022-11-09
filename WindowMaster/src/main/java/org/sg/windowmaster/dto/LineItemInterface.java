@@ -1,4 +1,4 @@
-package org.sg.windowmaster;
+package org.sg.windowmaster.dto;
 
 public interface LineItemInterface {
 

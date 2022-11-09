@@ -1,6 +1,6 @@
-package org.sg.windowmaster;
+package org.sg.windowmaster.dto;
 
-public abstract class Window {
+public abstract class Window implements LineItemInterface{
     // Properties
     private float height;
     private float width;

@@ -1,4 +1,4 @@
-package org.sg.windowmaster;
+package org.sg.windowmaster.dto;
 
 public class SquareWindow extends RectangularWindow {
     public SquareWindow(float height) {
